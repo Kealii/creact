@@ -1,4 +1,3 @@
 # Creact
-## Starter repo for the [creact tutorial](http://github.com/applegrain/creact)
 
-PR's accepted (ツ)
+### This app is an ideabox built in ReactJS. Setup info coming soon.
