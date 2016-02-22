@@ -1,3 +1,3 @@
 class Skill < ActiveRecord::Base
-  enum level: [:bad, :halfbad, :fantastic]
+  enum level: [:Bad, :Mediocre, :Fantastic]
 end

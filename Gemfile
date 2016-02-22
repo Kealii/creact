@@ -7,7 +7,7 @@ gem 'sass-rails', '>= 3.2'
 gem 'jquery-rails'
 gem 'uglifier', '>= 1.3.0'
 gem 'responders'
-gem 'faker'
+gem 'faker', '~> 1.6', '>= 1.6.2'
 gem 'populator'
 
 group :development, :test do
