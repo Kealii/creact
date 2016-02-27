@@ -11,9 +11,9 @@ var AllSkills = React.createClass({
         var skills = this.state.skills.map((skill) => {
             return (
                 <div key={skill.id} className="well">
-                    <h3>{skill.name}</h3>
-                    <p><strong>Level: </strong>{skill.level}</p>
-                    <p>{skill.details}</p>
+                    <p>{skill.name}</p>
+                    <h3><strong>Level: </strong>{skill.level}</h3>
+                    <h3>{skill.details}</h3>
                 </div>
             )
         });
