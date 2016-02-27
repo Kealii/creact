@@ -9,6 +9,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'responders'
 gem 'faker', '~> 1.6', '>= 1.6.2'
 gem 'populator'
+gem 'react-rails'
 
 group :development, :test do
   gem 'rspec-rails'
