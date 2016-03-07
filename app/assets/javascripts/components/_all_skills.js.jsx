@@ -8,7 +8,7 @@ var AllSkills = React.createClass({
     },
 
     render() {
-        var skills = this.state.skills.map((skill) => {
+        var skills = this.props.skills.map((skill) => {
             return (
                 <div key={skill.id} className="well">
                     <p>{skill.name}</p>
