@@ -7,13 +7,21 @@ var AllSkills = React.createClass({
         $.getJSON('/api/v1/skills.json', (response) => { this.setState({ skills: response }) });
     },
 
+    handleDelete(id) {
+        this.props.handleDelete(id);
+    },
+
+    handleEdit() {
+       console.log('you are in edit');
+    },
+
     render() {
         var skills = this.props.skills.map((skill) => {
             return (
                 <div key={skill.id} className="well">
-                    <p>{skill.name}</p>
-                    <h3><strong>Level: </strong>{skill.level}</h3>
-                    <h3>{skill.details}</h3>
+                    <Skill skill={skill}
+                           handleDelete={this.handleDelete.bind(this, skill.id)}
+                           handleEdit={this.handleEdit}/>
                 </div>
             )
         });
